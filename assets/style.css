@@ -1,0 +1,217 @@
+/* Custom styling for AI Travel Platform - Modern & Eye-Friendly */
+
+/* Main app background - softer gradient */
+.stApp {
+    background: linear-gradient(135deg, #f0f4f8 0%, #e2e8f0 100%);
+}
+
+/* Main header styling */
+.main-header {
+    font-size: 2.5rem;
+    font-weight: bold;
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* City card styling - clean white with subtle shadow */
+.city-card {
+    background: white;
+    border-radius: 12px;
+    padding: 1.2rem;
+    margin: 0.5rem 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    border: 1px solid rgba(0,0,0,0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.city-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Score styling - softer colors */
+.score-excellent {
+    color: #38a169;
+    font-weight: bold;
+    background: #f0fff4;
+    padding: 4px 12px;
+    border-radius: 20px;
+    display: inline-block;
+}
+
+.score-good {
+    color: #3182ce;
+    font-weight: bold;
+    background: #ebf8ff;
+    padding: 4px 12px;
+    border-radius: 20px;
+    display: inline-block;
+}
+
+.score-moderate {
+    color: #dd6b20;
+    font-weight: bold;
+    background: #fffaf0;
+    padding: 4px 12px;
+    border-radius: 20px;
+    display: inline-block;
+}
+
+.score-poor {
+    color: #e53e3e;
+    font-weight: bold;
+    background: #fff5f5;
+    padding: 4px 12px;
+    border-radius: 20px;
+    display: inline-block;
+}
+
+/* Weather metric styling */
+.weather-metric {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #2d3748;
+}
+
+/* Sidebar styling - softer gradient */
+.sidebar .sidebar-content {
+    background: linear-gradient(180deg, #ffffff 0%, #f7fafc 100%);
+    border-right: 1px solid rgba(0,0,0,0.05);
+}
+
+/* Sidebar text color */
+.sidebar .sidebar-content .stMarkdown {
+    color: #2d3748;
+}
+
+/* Tab styling - modern and clean */
+.stTabs [data-baseweb="tab-list"] {
+    gap: 12px;
+    background-color: rgba(255,255,255,0.5);
+    padding: 8px;
+    border-radius: 12px;
+}
+
+.stTabs [data-baseweb="tab"] {
+    height: 50px;
+    white-space: pre-wrap;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: white;
+    color: #4a5568;
+    border: 1px solid #e2e8f0;
+    transition: all 0.3s ease;
+}
+
+.stTabs [data-baseweb="tab"]:hover {
+    background-color: #edf2f7;
+    border-color: #cbd5e0;
+}
+
+.stTabs [aria-selected="true"] {
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    color: white !important;
+    border: none;
+}
+
+/* Metric cards - improved visibility */
+.stMetric {
+    background: white;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    border: 1px solid rgba(0,0,0,0.05);
+}
+
+.stMetric label {
+    color: #4a5568 !important;
+}
+
+.stMetric .stMarkdown {
+    color: #1e3c72 !important;
+}
+
+/* Expander styling */
+.streamlit-expanderHeader {
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid #e2e8f0;
+    color: #2d3748;
+    font-weight: 500;
+}
+
+.streamlit-expanderHeader:hover {
+    background-color: #f7fafc;
+}
+
+/* Button styling */
+.stButton > button {
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.stButton > button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(30,60,114,0.3);
+}
+
+/* Dataframe styling */
+.dataframe {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.dataframe th {
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    color: white;
+    padding: 12px;
+}
+
+/* Progress bar styling */
+.stProgress > div > div {
+    background: linear-gradient(90deg, #48bb78 0%, #38a169 100%);
+    border-radius: 10px;
+}
+
+/* Selectbox and input fields */
+.stSelectbox > div > div, 
+.stTextInput > div > div > input,
+.stTextArea > div > div > textarea {
+    background-color: white;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+}
+
+/* Info/Warning/Success boxes */
+.stAlert {
+    border-radius: 10px;
+    border-left: 4px solid;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #cbd5e0;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #a0aec0;
+}
