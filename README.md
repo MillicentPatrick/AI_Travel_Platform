@@ -2,7 +2,7 @@
 
 ### Weather-Driven Travel Decision System
 
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://your-app-url.streamlit.app)
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://aitravelplatform-ngfmtfgfgdwuoriycfzyki.streamlit.app/)
 [![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 
@@ -45,6 +45,25 @@ A unified, intelligent system that:
 - **Custom Scoring Weights**: Different factors emphasized based on travel type
 - **Personalized Packing Advice**: Weather-appropriate recommendations
 - **AI-Generated Insights**: Human-readable travel suggestions
+  
+### Data Science Approach
+This system uses a rule-based scoring model to simulate travel suitability decisions.
+
+**Feature Engineering:**
+- Temperature comfort score (based on optimal ranges per travel type)
+- Humidity discomfort penalty (higher humidity reduces comfort)
+- Wind risk factor (high wind impacts outdoor activities)
+- Visibility score (affects sightseeing and travel experience)
+
+**Model Design:**
+- Weighted scoring system customized per travel type
+- Scores normalized to a 0–100 scale for comparability
+- Risk scoring derived from threshold-based conditions
+
+**Why Rule-Based Instead of ML?**
+- No labeled dataset for “travel satisfaction”
+- Transparent and explainable decision logic
+- Faster deployment and easier customization
 
 ## 🏗️ Architecture
 User Interface (Streamlit)
@@ -355,6 +374,7 @@ streamlit run app.py
 
 Live Demo
 Check out the live demo: AI Travel Intelligence Platform
+https://aitravelplatform-ngfmtfgfgdwuoriycfzyki.streamlit.app/
 
 Made with ❤️ for travelers worldwide
 
