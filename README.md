@@ -10,6 +10,21 @@
 
 The **AI Travel Intelligence Platform** is a sophisticated web application that transforms raw global weather data into actionable travel decisions and destination recommendations. Instead of showing fragmented weather information, it provides intelligent, personalized travel guidance using real-time and forecast weather data.
 
+💼 Business Value
+
+This system demonstrates how raw data can be transformed into decision intelligence.
+
+Potential applications:
+- Travel platforms (personalized destination recommendations)
+- Airlines (demand forecasting based on weather conditions)
+- Hospitality industry (seasonal demand optimization)
+- Travel agencies (automated itinerary planning)
+
+Impact:
+- Improves user decision-making
+- Enhances customer experience
+- Reduces uncertainty in travel planning
+
 ### 🎯 The Problem
 
 Travelers face challenges when planning trips due to:
@@ -65,31 +80,32 @@ This system uses a rule-based scoring model to simulate travel suitability decis
 - Transparent and explainable decision logic
 - Faster deployment and easier customization
 
-## 🏗️ Architecture
-User Interface (Streamlit)
-↓
-Input Layer (Cities, Travel Type)
-↓
-Weather API Layer (OpenWeatherMap)
-↓
-Processing Engine
-├── Feature Engineering
-├── Travel Scoring Model
-├── Recommendation Engine
-└── Forecast Analyzer
-↓
-Analytics Layer
-├── City Ranking System
-├── Risk Scoring
-└── Best Travel Day Predictor
-↓
-Visualization Layer
-├── Tables (Rankings)
-├── Charts (Plotly)
-└── Interactive Map (PyDeck)
-↓
-Output (Insights + Recommendations)
 
+## 🏗️ Architecture
+Architecture Overview
+
+1. Data Ingestion
+   - OpenWeatherMap API (current + forecast)
+
+2. Data Processing
+   - Feature engineering (temperature, humidity, wind, visibility)
+   - Travel scoring model
+   - Risk analysis engine
+
+3. Analytics Layer
+   - City ranking system
+   - Best travel day prediction
+   - Forecast trend analysis
+
+4. Application Layer
+   - Streamlit dashboard
+   - Interactive map (PyDeck)
+   - AI chatbot interface
+
+5. Output
+   - Ranked destinations
+   - Travel recommendations
+   - Visual insights
 
 ## 🚀 Getting Started
 
@@ -117,7 +133,7 @@ Or install individually:
 pip install streamlit pandas numpy plotly requests python-dotenv pydeck
 
 4.Set Up API Key
-OPENWEATHER_API_KEY=your_api_key_here
+OPENWEATHER_API_KEY=(api_key_here)
 
 5.Run the Application
 streamlit run app.py
@@ -335,6 +351,13 @@ Push to branch (git push origin feature/AmazingFeature)
 
 Open a Pull Request
 
+⚠️ Limitations
+- Uses rule-based scoring instead of trained ML models
+- Does not include user preferences (budget, culture, travel history)
+- Weather forecast accuracy decreases beyond 3–5 days
+- Does not account for external factors like events or safety conditions
+
+
 📝 TODO / Roadmap
 Add historical weather data analysis
 
@@ -371,7 +394,7 @@ Distributed under the MIT License. See LICENSE file for more information.
 
  Quick Start Commands
  # Clone and setup
-git clone https://github.com/yourusername/ai-travel-platform.git
+git clone https://github.com/MillicentPatrick/ai-travel-platform.git
 cd ai-travel-platform
 
 # Create environment
@@ -387,7 +410,7 @@ echo OPENWEATHER_API_KEY=your_key_here > .env
 # Run app
 streamlit run app.py
 
-Live Demo
+# Live Demo
 Check out the live demo: AI Travel Intelligence Platform
 https://aitravelplatform-ngfmtfgfgdwuoriycfzyki.streamlit.app/
 
