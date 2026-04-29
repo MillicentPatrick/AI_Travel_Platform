@@ -309,6 +309,21 @@ Read-only API operations
 
 Input sanitization for city names
 
+## Sample Output / Case Study
+**Example Scenario**
+**Input:**
+Travel Type: Beach
+Cities: Mombasa, KE | Dubai, AE | London, UK
+
+**Output:**
+- Mombasa: Score 85 (Ideal conditions, moderate humidity)
+- Dubai: Score 78 (High temperature, slight discomfort)
+- London: Score 52 (Low temperature, poor beach conditions)
+
+**Insight:**
+The system correctly prioritizes warm coastal climates for beach travel.
+
+
 🤝 Contributing
 Fork the repository
 
